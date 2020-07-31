@@ -1,0 +1,135 @@
+.features__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+}
+
+.features__wrapper h2 {
+  margin: 0;
+  padding-bottom: 35px;
+  padding-top: 32px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: $text-tablet;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: center no-repeat $green-leaf;
+    margin-right: 20px;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.features__item p {
+  flex-shrink: 25;
+  margin: 0;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    border-bottom: 1px solid $gray-footer;
+  }
+
+  .features__wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .features__wrapper h2 {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0;
+    padding-left: 3px;
+    margin: 0;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 63px;
+  }
+
+  .features__item {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 139px;
+    margin-right: 0;
+    width: 200px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 37px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      left: 126px;
+      top: 90px;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: $gray-footer;
+    }
+
+    &:nth-child(1)::after {
+      content: "1";
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
+
+    &:nth-child(odd) {
+      margin-right: 187px;
+    }
+  }
+}

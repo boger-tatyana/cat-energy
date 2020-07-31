@@ -1,0 +1,28 @@
+.table__cell {
+  padding: 0;
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--price {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .table {
+    font-size: 16px;
+    line-height: 1;
+    border-spacing: 0 7px;
+  }
+
+  .table__cell {
+    padding-bottom: 7px;
+    border-bottom: 1px solid $border-range;
+  }
+}

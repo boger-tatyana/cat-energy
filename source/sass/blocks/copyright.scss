@@ -1,0 +1,27 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.copyright__name {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: $text-light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-width: 166px;
+  }
+
+  .copyright__link {
+    padding-right: 0;
+  }
+
+  .copyright__link svg {
+    margin-left: 23px;
+  }
+}

@@ -1,0 +1,35 @@
+.stock__icon {
+  display: block;
+  margin-right: auto;
+  padding-top: 65px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  fill: $bg-white;
+}
+
+.stock__text {
+  margin: 0 auto;
+  width: 159px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: $bg-white;
+  padding-bottom: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .stock__icon {
+    margin-bottom: 74px;
+    padding-left: 91px;
+    margin-left: 0;
+  }
+
+  .stock__text {
+    width: 165px;
+    text-align: left;
+    padding-top: 77px;
+    padding-bottom: 0;
+    margin-bottom: 69px;
+  }
+}
