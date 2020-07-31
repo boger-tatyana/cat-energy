@@ -1,0 +1,50 @@
+.page-main {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.page-main__title {
+  font-size: 36px;
+  color: $text-tablet;
+  font-weight: 400;
+  padding-left: 22px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  &--form {
+    border-bottom: none;
+  }
+}
+
+.page-main__container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-main__description {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 54px;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+    padding-left: 32px;
+    margin: 0;
+    padding-top: 41px;
+    padding-bottom: 53px;
+    border: none;
+  }
+
+  .page-main__description {
+    width: 450px;
+    margin-bottom: 68px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,130 @@
+.catalog-additional {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 42px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    vertical-align: middle;
+    background-color: $green-leaf;
+  }
+}
+
+.catalog-additional__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 39px;
+}
+
+.catalog-additional__title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid $border-color;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: $text-tablet;
+}
+
+.catalog-additional__stock {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    width: 280px;
+    height: 289px;
+
+    background-repeat: no-repeat;
+    background-size: 280px 289px;
+    background-color: $green-leaf;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: 280px 289px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-additional {
+    padding-top: 8px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 30px;
+      width: 100%;
+      z-index: -1;
+      height: 3px;
+      vertical-align: middle;
+      background-color: $green-leaf;
+    }
+  }
+
+  .catalog-additional__title {
+    padding-right: 37px;
+    padding-left: 37px;
+    padding-top: 0;
+    padding-bottom: 74px;
+    background-color: $bg-white;
+    position: relative;
+    display: inline-block;
+    width: 339px;
+    border-bottom: none;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .catalog-additional__wrapper {
+    padding-top: 10px;
+  }
+
+  .catalog-additional__list {
+    padding-bottom: 69px;
+  }
+
+  .catalog-additional__stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 708px;
+      height: 200px;
+      background-color: none;
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+        background-size: 708px 200px;
+      }
+    }
+  }
+}

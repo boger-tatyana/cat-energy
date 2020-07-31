@@ -1,0 +1,164 @@
+.page-footer {
+  background-color: $gray-footer;
+}
+
+.page-footer__contacts-wrapper {
+  padding-left: 19px;
+  padding-right: 25px;
+  margin: 0;
+  background-color: $gray-footer;
+  height: 114px;
+
+  &--index {
+    background-color: $bg-white;
+  }
+}
+
+.page-footer__contacts-block {
+  display: flex;
+}
+
+.page-footer__contacts-invitation {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $text-tablet;
+  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+.page-footer__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: $text-light-gray;
+  font-style: normal;
+  line-height: 1.43;
+  padding-top: 33px;
+  padding-bottom: 28px;
+}
+
+.page-footer__map {
+  position: relative;
+  height: 362px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 53px / 2);
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.page-footer__live-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 39px;
+}
+
+.page-footer__logo-container {
+  height: 93px;
+  border-bottom: 1px solid $border-color;
+}
+
+.page-footer__logo-link {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 28px;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__copyright a {
+  display: flex;
+  padding-bottom: 22px;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts-wrapper {
+    padding: 66px 72px 20px;
+  }
+
+  .page-footer__contacts-block {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .page-footer__contacts-invitation {
+    width: 160px;
+    font-size: 20px;
+    line-height: 1.25;
+    padding: 0;
+  }
+
+  .page-footer__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 0;
+  }
+
+  .page-footer__map-contacts {
+    width: auto;
+    height: 100%;
+  }
+
+  .page-footer__map {
+    height: 396px;
+    overflow: hidden;
+
+    &::before {
+      top: 135px;
+      left: 323px;
+
+      width: 113px;
+      height: 106px;
+    }
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .page-footer__logo-container {
+    border: none;
+  }
+
+  .page-footer__copyright a {
+    padding: 0;
+  }
+}
