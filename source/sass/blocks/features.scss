@@ -1,13 +1,6 @@
-.features__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 42px;
-}
-
-.features__wrapper h2 {
+.features__container h2 {
   margin: 0;
-  padding-bottom: 35px;
-  padding-top: 32px;
+  padding-bottom: 29px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -23,7 +16,6 @@
 .features__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   position: relative;
 
@@ -34,6 +26,7 @@
     height: 60px;
     background: center no-repeat $green-leaf;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   &:nth-child(1)::before {
@@ -56,6 +49,8 @@
 .features__item p {
   flex-shrink: 25;
   margin: 0;
+  padding-bottom: 23px;
+  line-height: 18px;
 }
 
 .features__item:last-child {
@@ -67,13 +62,7 @@
     border-bottom: 1px solid $gray-footer;
   }
 
-  .features__wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-
-  .features__wrapper h2 {
+  .features__container h2 {
     font-size: 60px;
     line-height: 1;
     padding: 0;

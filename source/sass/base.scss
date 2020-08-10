@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -38,4 +42,33 @@ ul {
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 320px - (20px * 2);
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 768px - (30px * 2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1440px - (110px * 2);
+  }
+
+  .page__body {
+    background: url("../../img/index-background-desktop@1x.jpg") right top no-repeat;
+    background-size: 50%;
+  }
 }
