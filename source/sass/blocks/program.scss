@@ -133,6 +133,7 @@
 
   .program__wrapper {
     position: relative;
+    margin: auto;
     padding-top: 84px;
     padding-left: 110px;
 
@@ -165,10 +166,12 @@
 
   .program__title {
     padding-top: 19px;
+    margin-left: 80px;
   }
 
   .program__slogan {
     width: 415px;
+    margin-left: 80px;
     margin-bottom: 53px;
     padding: 0;
   }
@@ -180,5 +183,12 @@
     z-index: -1;
     width: 552px;
     height: 499px;
+  }
+
+  .program__link {
+    position: absolute;
+    margin: 0;
+    left: 190px;
+    top: 300px;
   }
 }
