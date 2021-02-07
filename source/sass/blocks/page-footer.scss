@@ -162,3 +162,29 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    position: relative;
+  }
+
+  .page-footer__contacts-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+  }
+
+  .page-footer__contacts-invitation {
+    padding-right: 67px;
+  }
+
+  .page-footer__address {
+    text-align: inherit;
+  }
+
+  .page-footer__wrapper {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}

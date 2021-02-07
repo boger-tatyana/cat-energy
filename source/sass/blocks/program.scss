@@ -93,6 +93,7 @@
   }
 
   .program__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -135,24 +136,23 @@
     position: relative;
     margin: auto;
     padding-top: 84px;
-    padding-left: 110px;
 
     &::before {
       content: "";
       position: absolute;
       top: -143px;
-      left: 50%;
-      display: block;
+      right: 0;
       z-index: -1;
-      width: 50%;
+      min-width: 50%;
       height: 696px;
-
+      background-color: #5eaa2f;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: left;
-      background-size: 720px 696px;
+      background-position: bottom right;
+      background-repeat: no-repeat no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px 696px;
       }
     }
   }
@@ -160,7 +160,7 @@
   .program__wrapper img {
     position: absolute;
     top: 20px;
-    left: 498px;
+    left: 450px;
     width: auto;
   }
 
@@ -188,7 +188,7 @@
   .program__link {
     position: absolute;
     margin: 0;
-    left: 190px;
+    left: 80px;
     top: 300px;
   }
 }

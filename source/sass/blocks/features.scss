@@ -1,6 +1,6 @@
 .features__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 42px;
 }
 
@@ -68,9 +68,9 @@
   }
 
   .features__wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
     margin-bottom: 0;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .features__wrapper h2 {
@@ -131,5 +131,27 @@
     &:nth-child(odd) {
       margin-right: 187px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    border: none;
+  }
+
+  .features__wrapper {
+    margin-bottom: 0;
+  }
+
+  .features__wrapper h2 {
+    padding: 0;
+  }
+
+  .features__list {
+    justify-content: space-around;
+  }
+
+  .features__item:nth-child(odd) {
+    margin-right: 0;
   }
 }

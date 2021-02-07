@@ -52,4 +52,27 @@
   .social__link svg {
     fill: $icon-fill;
   }
+
+  .social__link {
+    &--vkontakte {
+      svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--facebook {
+      svg {
+        width: 14px;
+        height: 28px;
+      }
+    }
+  }
 }
